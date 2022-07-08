@@ -2,8 +2,8 @@ import style from "./Footer.module.scss";
 import {SocialLinks} from "../C0_SocialLinks/SocialLinks";
 
 const links = [
-    {label: "Terms", href: "#"},
-    {label: "Privacy policy", href: "#"},
+    {label: "Terms", href: "https://www.premint.xyz/terms/"},
+    {label: "Privacy policy", href: "https://www.premint.xyz/terms/"},
 ]
 
 export const Footer = () => {
@@ -14,7 +14,14 @@ export const Footer = () => {
                     <div className={style.links}>
                         {
                             links.map(({label, href}, index) => (
-                                <a href={href} className={style.link} key={index}>{label}</a>
+                                <a href={href}
+                                   className={style.link}
+                                   key={index}
+                                   target="_blank"
+                                   rel="nofollow noopener noreferrer"
+                                >
+                                    {label}
+                                </a>
                             ))
                         }
                     </div>

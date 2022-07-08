@@ -142,14 +142,20 @@
           }
         }
 
-        .text {
+        .texts {
           margin-top: 12px;
+
+          @include desktop {
+            margin-top: 16px;
+          }
+        }
+
+        .text {
           font-size: 14px;
           line-height: 160%;
           color: #FFF;
 
           @include desktop {
-            margin-top: 16px;
             font-size: 16px;
           }
         }

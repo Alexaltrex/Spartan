@@ -1,10 +1,10 @@
 import style from "./SpartanIsMassive.module.scss"
 
-const text = "SPARTAN is one of the most heavily used NFT services, loved by the entire web3 community."
+const text = "There are NO LIMITS to the access this digital NFT will give you. Benefits can last up to 5 years."
 
 const items = [
     {
-        title: "10+M",
+        title: "10 MILLION",
         subtitle: "COMMUNITY",
         text: "Spartan is a global fitness here like in the brand with a 10+ million strong community.",
     },
@@ -34,7 +34,7 @@ export const SpartanIsMassive = () => {
     return (
         <div className={style.spartanIsMassive}>
             <div className={style.inner}>
-                <h2 className={style.title}>spartan is massive</h2>
+                <h2 className={style.title}>Unbreakable Global Pass</h2>
                 <p className={style.text}>{text}</p>
                 <div className={style.items}>
                     {

@@ -16,8 +16,8 @@ export const GlobalPass = () => {
                     <h1 className={style.title}>{title}</h1>
                     <div className={style.texts}>
                         <p className={style.text}>{text1}</p>
-                        <br/>
-                        <p className={style.text}>{text2}</p>
+                        {/*<br/>*/}
+                        {/*<p className={style.text}>{text2}</p>*/}
                     </div>
                     <button className={style.btn}>
                         buy on opensea

@@ -6,33 +6,33 @@ const title2 = "GET EXCLUSIVE ACCESS TO OUR HOLDER BENEFITS";
 
 const items = [
     {
-        title: "Track the hottest projects",
-        text: "Get access to all of the public projects currently active on PREMINT and alpha on which lists are growing the fastest.",
+        title: "UNLIMITED ACCESS TO ALL SPARTAN EVENTS WORLDWIDE",
+        text: "Trails, obstacles, fitness challenges, you decide: This global pass is for all Spartan events worldwide for  3-5 years.",
         icon: svgIcons.thisIsNot0,
     },
     {
-        title: "Newsletter",
-        text: "Subscribe to a token-gated newsletter to stay informed about upcoming mint dates and trending projects.",
+        title: "EXCLUSIVE MERCH DROPS",
+        text: "Unbreakable branded Spartan merchandise for NFT holders only.",
         icon: svgIcons.thisIsNot1,
     },
     {
-        title: "See what you qualify for",
-        text: "PREMINT will show you what projects you’re eligible for based on your NFT collection and help get you on the list.",
+        title: "ENSHRINE YOUR NAME IN HISTORY",
+        text: "Those who mint this NFT will have their name inscribed on a statue dedicated to the “Spartan 300”  in Ancient Sparta.",
         icon: svgIcons.thisIsNot2,
     },
     {
-        title: "Private calendar feed",
-        text: "Access your personalized calendar feed showing registration times and mint dates for all projects on the platform.",
+        title: "FUTURE AIRDOP",
+        text: "Details to come, however holders will be rewarded with a one-of-a-kind NFT created by a world renowned artist and airdropped into their wallet.",
         icon: svgIcons.thisIsNot3,
     },
     {
-        title: "Beta Access",
-        text: "Get early access to upcoming PREMINT public collector features before anyone else has access to them.",
+        title: "BE UNBREAKABLE EVENT",
+        text: "This is an epic 3-day event at a surprise exclusive global location. This annual event is for NFT pass holders only.",
         icon: svgIcons.thisIsNot4,
     },
     {
-        title: "Guaranteed access for 2024",
-        text: "Founder’s Edition Collector Pass holders are guaranteed a spot to mint the 2024 Collector Pass.",
+        title: "VIP TREATMENT",
+        text: "Special VIP services will be made available at specific events in certain markets.",
         icon: svgIcons.thisIsNot5,
     },
 ];
