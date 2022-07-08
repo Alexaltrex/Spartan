@@ -19,6 +19,7 @@ export const SocialLinks: FC<ISocialLinks> = ({className}) => {
                 socialLinks.map(({href, icon}, index) => (
                     <a key={index}
                        href={href}
+                       target="_blank"
                        rel="nofollow noopener noreferrer"
                        className={style.socialLink}
                     >

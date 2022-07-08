@@ -18,7 +18,7 @@ const items = [
     },
     {
         q: "What wallet do I need to store my NFT?",
-        a: <p>We suggest a Metamask wallet. It's very simple to download and It's free. All you need to do is head on over to <a href="https://metamask.io">metamask.io</a> and download the wallet, add the chrome extension to your computer if you have one, and write down or print out your seedphrase. Do not take a picture of it. Put it in your safe in case you need to access it in the future. You can also download the Metamask wallet to your smartphone and import your wallet as well using your seedphrase. Again, this is all very simple and we will release easy to understand tutorial videos for you prior to mint.</p>,
+        a: <p>We suggest a Metamask wallet. It's very simple to download and It's free. All you need to do is head on over to <a href="https://metamask.io" target="_blank" rel="nofollow noopener noreferrer">metamask.io</a> and download the wallet, add the chrome extension to your computer if you have one, and write down or print out your seedphrase. Do not take a picture of it. Put it in your safe in case you need to access it in the future. You can also download the Metamask wallet to your smartphone and import your wallet as well using your seedphrase. Again, this is all very simple and we will release easy to understand tutorial videos for you prior to mint.</p>,
         jsx: true,
     },
     {
