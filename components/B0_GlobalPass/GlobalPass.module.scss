@@ -1,0 +1,92 @@
+@import "./assets/scss/app";
+
+.globalPass {
+  @include container;
+  background: #121212;
+
+
+  .inner {
+    @include inner;
+    padding-top: 38px;
+    padding-bottom: 60px;
+
+    @include desktop {
+      padding-top: 54px;
+      padding-bottom: 70px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .leftBlock {
+        svg {
+          width: 224px;
+          height: 225px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+
+          @include desktop {
+            width: 475px;
+            height: 478px;
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+    }
+
+    .rightBlock {
+      margin-top: 32px;
+
+      @include desktop {
+        @include centerColumn;
+        align-items: flex-start;
+        margin-top: 0;
+      }
+
+
+      .title {
+        @include h1;
+      }
+
+      .texts {
+        margin-top: 20px;
+
+        @include desktop {
+          margin-top: 30px;
+        }
+
+        .text {
+          font-size: 14px;
+          line-height: 160%;
+        }
+
+      }
+
+      .btn {
+        @include button;
+        margin-top: 24px;
+        padding: 15px 22px;
+        background: #FFFFFF;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #000000;
+        transition: 0.3s;
+
+        &:hover {
+          background: $colorHover;
+        }
+
+        @include desktop {
+          margin-top: 34px;
+          padding: 17px 30px;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+    }
+  }
+}

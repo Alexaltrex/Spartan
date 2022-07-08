@@ -1,0 +1,112 @@
+@import "./assets/scss/app";
+
+.header {
+  @include container;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #000;
+  border-bottom: 1px solid #333333;
+  transition: 0.5s;
+
+  &_hide {
+    transform: translateY(-102%);
+  }
+
+  .inner {
+    @include inner;
+    height: 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include desktop {
+      height: 87px;
+    }
+
+    .leftBlock {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 117px;
+
+        @include desktop {
+          width: 146px;
+        }
+      }
+    }
+
+    .rightBlock {
+      display: flex;
+      justify-content: flex-end;
+
+      @include desktop {
+        justify-content: space-between;
+      }
+
+      .links {
+        @include onlyDesktop(flex);
+
+        .link {
+          @include centerColumn;
+          position: relative;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #FFF;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          //border-bottom: 2px solid transparent;
+          transition: 0.3s;
+
+          &:not(:first-child) {
+            margin-left: 53px;
+          }
+
+          &::after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            content: "";
+            display: block;
+            background: #FFF;
+            transform: scale(0);
+            transition: 0.3s;
+          }
+
+          &:hover {
+            color: $colorHover;
+
+            &::after {
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 1px;
+              content: "";
+              display: block;
+              background: #FFF;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+
+      .socialLinks {
+        @include onlyDesktop(flex);
+      }
+
+      .burgerBtn {
+        @include onlyMobile();
+        @include button;
+      }
+
+    }
+
+
+  }
+}

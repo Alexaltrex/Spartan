@@ -1,0 +1,19 @@
+@import "./assets/scss/app";
+
+.indexPage {
+
+  &_lock {
+    //height: 100vh;
+    //overflow: hidden;
+  }
+
+
+  .main {
+    padding-top: 64px;
+
+    @include desktop {
+      padding-top: 87px;
+    }
+  }
+
+}

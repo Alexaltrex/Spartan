@@ -1,0 +1,69 @@
+@import "./assets/scss/app";
+
+.mintSoldOutTop {
+  @include container;
+
+  .inner {
+    @include inner;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .title {
+      @include h3;
+      color: #000;
+    }
+
+    .text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 160%;
+      color: #000000;
+      margin-top: 20px;
+
+      @include desktop {
+        font-size: 16px;
+      }
+    }
+
+    .status {
+      margin-top: 40px;
+      height: 6px;
+      background: #D8D8D8;
+
+      @include desktop {
+        height: 8px;
+      }
+
+      .indicator {
+        height: 100%;
+        background: #CF1019;
+      }
+    }
+
+    .value {
+      margin-top: 18px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+
+      @include desktop {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      span {
+        &:nth-child(1) {
+          color: #000;
+        }
+        &:nth-child(2) {
+          color: #6C6C6C;
+        }
+      }
+    }
+
+  }
+
+
+
+}

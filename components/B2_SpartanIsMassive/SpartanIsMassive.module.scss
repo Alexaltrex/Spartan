@@ -1,0 +1,102 @@
+@import "./assets/scss/app";
+
+.spartanIsMassive {
+  @include container;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url(../../public/spartanIsMassive.png);
+  background-size: cover;
+  background-position: center;
+
+  .inner {
+    @include inner;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    .title {
+      @include h2;
+    }
+
+    .text {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 160%;
+      color: #FFF;
+
+      @include desktop {
+        font-size: 16px;
+      }
+    }
+
+    .items {
+      margin-top: 30px;
+
+      @include desktop {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 86px;
+      }
+
+      .item {
+
+        &:not(:first-child) {
+          margin-top: 50px;
+
+          @include desktop {
+            margin-top: 0;
+          }
+        }
+
+        @include desktop {
+
+        }
+
+        .title {
+          @include DrukCyr;
+          font-size: 70px;
+          line-height: 89px;
+          text-transform: uppercase;
+          color: #FFF;
+
+          @include desktop {
+            font-size: 80px;
+            line-height: 102px;
+          }
+        }
+
+        .subtitle {
+          margin-top: 8px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #FFF;
+
+          @include desktop {
+            margin-top: 10px;
+            font-size: 18px;
+          }
+        }
+
+        .text {
+          margin-top: 24px;
+          font-size: 14px;
+          line-height: 160%;
+          color: #FFF;
+
+          @include desktop {
+            margin-top: 26px;
+            font-size: 16px;
+          }
+        }
+
+      }
+    }
+  }
+}
