@@ -10,7 +10,9 @@ export const GlobalPass = () => {
         <div className={style.globalPass}>
             <div className={style.inner}>
                 <div className={style.leftBlock}>
-                    {svgIcons.cards}
+                    {/*{svgIcons.cards}*/}
+
+                    <img src="/Frame.png" alt="" className={style.img}/>
                 </div>
                 <div className={style.rightBlock}>
                     <h1 className={style.title}>{title}</h1>
@@ -20,7 +22,7 @@ export const GlobalPass = () => {
                         {/*<p className={style.text}>{text2}</p>*/}
                     </div>
                     <button className={style.btn}>
-                        buy on opensea
+                        MINT
                     </button>
                 </div>
             </div>

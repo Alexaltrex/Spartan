@@ -18,7 +18,11 @@
     }
 
     .leftBlock {
-        svg {
+      position: relative;
+      overflow: hidden;
+      @include centerColumn;
+
+      svg {
           width: 224px;
           height: 225px;
           display: block;
@@ -32,6 +36,15 @@
             margin-right: 0;
           }
         }
+
+      .img {
+        //@include absoluteCenter;
+        width: 225px;
+
+        @include desktop {
+          width: 478px;
+        }
+      }
     }
 
     .rightBlock {
