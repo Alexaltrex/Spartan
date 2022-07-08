@@ -30,7 +30,7 @@ const IndexPage: NextPage = observer(() => {
 
     const onScrollHandler = useCallback((e: any) => {
         const newScrollTop = window.scrollY;
-        if (newScrollTop > scrollTop) {
+        if (newScrollTop > scrollTop && newScrollTop > 100) {
             setHideHeader(true);
         } else {
             setHideHeader(false);
