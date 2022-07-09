@@ -1,6 +1,6 @@
 import style from "./MintSoldOutBottom.module.scss"
 
-const text = "Thanks to everyone for becoming a UNBREAKABLE Collector Pass holder! Looking for a pass? Check out secondary listings on OpenSea!"
+const text = "Thanks to everyone for becoming a UNBREAKABLE GLOBAL PASS holder! Looking for a pass? Check out secondary listings on OpenSea!"
 
 export const MintSoldOutBottom = () => {
     return (
