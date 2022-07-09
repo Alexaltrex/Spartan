@@ -11,9 +11,14 @@
       margin-left: 30px;
     }
 
-    svg path {
-      transition: 0.3s;
-      fill: #FFF;
+    svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+        transition: 0.3s;
+        fill: #FFF;
+      }
     }
 
     &:hover {

@@ -62,29 +62,40 @@
 
   }
 
-  .answerBlock {
-    padding-top: 20px;
-    font-size: 14px;
-    line-height: 160%;
-    color: #FFF;
-    transform: scale(0);
-    transition: 0.5s;
-    display: none;
+  //.answerBlock {
+  //  padding-top: 20px;
+  //  font-size: 14px;
+  //  line-height: 160%;
+  //  color: #FFF;
+  //  transform: scale(0);
+  //
+  //  @include desktop {
+  //    font-size: 16px;
+  //  }
+  //
+  //  a {
+  //    text-decoration: none;
+  //    font-weight: 700;
+  //    color: #CF1019;
+  //  }
+  //
+  //}
+}
 
-    &_show {
-      transform: scale(1);
-      display: block;
-    }
+.answerBlock {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 160%;
+  color: #FFF;
 
-    @include desktop {
-      font-size: 16px;
-    }
-
-    a {
-      text-decoration: none;
-      font-weight: 700;
-      color: #CF1019;
-    }
-
+  @include desktop {
+    font-size: 16px;
   }
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #CF1019;
+  }
+
 }

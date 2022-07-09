@@ -4,8 +4,11 @@ import {FC} from "react";
 import clsx from "clsx";
 
 const socialLinks = [
-    { icon: svgIcons.telegram, href: "#" },
+    { icon: svgIcons.spartan, href: "#" },
+    { icon: svgIcons.discord, href: "#" },
+    { icon: svgIcons.instagram, href: "#" },
     { icon: svgIcons.twitter, href: "#" },
+
 ];
 
 interface ISocialLinks {

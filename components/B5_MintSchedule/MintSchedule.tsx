@@ -3,7 +3,7 @@ import style from "./MintSchedule.module.scss"
 const items = [
     {
         time: "10:00 AM PST",
-        date: "July 8, 2022",
+        date: "August 8, 2022",
         title: "Guaranteed Allowlist",
         text: "Wallets that won a guaranteed spot. Show up anytime in this window and easily mint your pass. If you don’t mint during this time, your pass may be claimed by someone on the Waitlist.",
     },

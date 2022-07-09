@@ -11,14 +11,14 @@ export const MintSoldOutTop = () => {
         <div className={style.mintSoldOutTop}>
             <div className={style.inner}>
                 <h3 className={style.title}>MINT IS LIVE</h3>
-                <p className={style.text}>{text}</p>
+                {/*<p className={style.text}>{text}</p>*/}
                 <div className={style.status}>
                     <div className={style.indicator}
                          style={{ width: `${100*value/total}%`}}
                     />
                 </div>
                 <p className={style.value}>
-                    <span>{`${valueFormat} / ${totalFormat}`}</span> <span>suply remaining</span>
+                    <span>{`${valueFormat} / ${totalFormat}`}</span> <span>supply remaining</span>
                 </p>
             </div>
         </div>

@@ -4,19 +4,19 @@ const text = "There are NO LIMITS to the access this digital NFT will give you. 
 
 const items = [
     {
-        title: "10 MILLION",
-        subtitle: "COMMUNITY",
-        text: "Spartan is a global fitness here like in the brand with a 10+ million strong community.",
+        title: "1,500,000 ",
+        subtitle: "REGISTRATIONS",
+        text: "Spartan brand events attract over 1.5 million registrants annually from over 50 countries.",
     },
     {
         title: " 450+",
         subtitle: "GLOBAL EVENTS AND GROWING",
-        text: "(add all the Spartan brands presentation spartan gave us)",
+        text: "", //"(add all the Spartan brands presentation spartan gave us)",
     },
     {
-        title: "1,500,000 ",
-        subtitle: "REGISTRATIONS",
-        text: "Spartan brand events attract over 1.5 million registrants annually from over 50 countries.",
+        title: "10 MILLION+",
+        subtitle: "COMMUNITY",
+        text: "Spartan is a global fitness here like in the brand with a 10+ million strong community.",
     },
     {
         title: "150,000",
@@ -48,6 +48,9 @@ export const SpartanIsMassive = () => {
                             </div>
                         ))
                     }
+                    <div className={style.item}>
+                        <img src="/logos.jpg" alt="" className={style.img}/>
+                    </div>
                 </div>
             </div>
         </div>

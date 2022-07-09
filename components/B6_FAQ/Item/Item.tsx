@@ -4,6 +4,7 @@ import {observer} from "mobx-react-lite";
 import {useStore} from "../../../store/useStore";
 import {svgIcons} from "../../../assets/svgIcons";
 import clsx from "clsx";
+import {Collapse} from "@mui/material";
 
 interface IItem {
     index: number
@@ -24,16 +25,18 @@ export const Item: FC<IItem> = observer(({index, q, a}) => {
                     {faqIndex === index ? svgIcons.minus : svgIcons.plus}
                 </button>
             </div>
-            <div className={clsx({
-                [style.answerBlock]: true,
-                [style.answerBlock_show]: faqIndex === index,
-            })}>
-                {
-                    typeof a === "string"
-                        ? <p>{a}</p>
-                        : a
-                }
-            </div>
+
+            <Collapse in={faqIndex === index}>
+                <div className={style.answerBlock}>
+                    {
+                        typeof a === "string"
+                            ? <p>{a}</p>
+                            : a
+                    }
+
+                </div>
+            </Collapse>
+
         </div>
     )
 })
