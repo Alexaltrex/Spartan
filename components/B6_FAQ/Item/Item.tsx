@@ -20,7 +20,14 @@ export const Item: FC<IItem> = observer(({index, q, a}) => {
             <div className={style.questionBlock}>
                 <p className={style.question}>{q}</p>
                 <button className={style.btn}
-                        onClick={() => setFaqIndex(index)}
+                        onClick={() => {
+                            if (index !== faqIndex) {
+                                setFaqIndex(index)
+                            } else {
+                                setFaqIndex(-1)
+                            }
+
+                        }}
                 >
                     {faqIndex === index ? svgIcons.minus : svgIcons.plus}
                 </button>
