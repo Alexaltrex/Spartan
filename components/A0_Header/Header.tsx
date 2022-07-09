@@ -21,9 +21,12 @@ export const Header = observer(() => {
             [style.header_hide]: hideHeader && !burgerMenu,
         })}>
             <div className={style.inner}>
-                <div className={style.leftBlock}>
-                    {svgIcons.logo}
-                </div>
+                <Link href="/">
+                    <a className={style.leftBlock}>
+                        {svgIcons.logo}
+                    </a>
+
+                </Link>
                 <div className={style.rightBlock}>
                     <nav className={style.links}>
                         {

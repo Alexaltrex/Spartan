@@ -1,8 +1,14 @@
 import style from "./SpartanIsMassive.module.scss"
+import {Logos} from "./Logos/Logos";
 
 const text = "There are NO LIMITS to the access this digital NFT will give you. Benefits can last up to 5 years."
 
 const items = [
+    {
+        title: "10 MILLION+",
+        subtitle: "COMMUNITY",
+        text: "Spartan is a global fitness here like in the brand with a 10+ million strong community.",
+    },
     {
         title: "1,500,000 ",
         subtitle: "REGISTRATIONS",
@@ -14,19 +20,14 @@ const items = [
         text: "", //"(add all the Spartan brands presentation spartan gave us)",
     },
     {
-        title: "10 MILLION+",
-        subtitle: "COMMUNITY",
-        text: "Spartan is a global fitness here like in the brand with a 10+ million strong community.",
+        title: "100 MILLION",
+        subtitle: "We're on a mission to change 100 million lives.",
+        text: "",
     },
     {
         title: "150,000",
         subtitle: "REPEAT REGISTRANTS",
         text: "There are over 150,000 registrants who register for multiple events per year.",
-    },
-    {
-        title: "100 MILLION",
-        subtitle: "We're on a mission to change 100 million lives.",
-        text: "",
     },
 ]
 
@@ -45,13 +46,14 @@ export const SpartanIsMassive = () => {
                                 <p className={style.title}>{title}</p>
                                 <p className={style.subtitle}>{subtitle}</p>
                                 {text && <p className={style.text}>{text}</p>}
+
+                                { index === 2 && <Logos className={style.logos}/> }
                             </div>
                         ))
                     }
-                    <div className={style.item}>
-                        <img src="/logos.jpg" alt="" className={style.img}/>
-                    </div>
                 </div>
+
+
             </div>
         </div>
     )

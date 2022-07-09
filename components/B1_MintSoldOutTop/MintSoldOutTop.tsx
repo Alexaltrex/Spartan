@@ -3,8 +3,8 @@ import style from "./MintSoldOutTop.module.scss"
 const text = "Thanks to everyone for becoming a PREMINT Collector Pass holder! Looking for a pass? Check out secondary listings on OpenSea!";
 const total = 15000;
 const value = 1000;
-const totalFormat =  new Intl.NumberFormat('ru-RU').format(total);
-const valueFormat =  new Intl.NumberFormat('ru-RU').format(value);
+const totalFormat =  new Intl.NumberFormat('en-En').format(total);
+const valueFormat =  new Intl.NumberFormat('en-En').format(value);
 
 export const MintSoldOutTop = () => {
     return (

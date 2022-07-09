@@ -3,7 +3,7 @@ import {action, makeObservable, observable} from "mobx";
 export class Store {
     burgerMenu = false
     hideHeader = false
-    faqIndex = 0
+    faqIndex = -1
 
     constructor() {
         makeObservable(this, {

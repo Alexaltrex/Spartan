@@ -44,6 +44,7 @@
       }
 
       .item {
+        position: relative;
 
         &:not(:first-child) {
           margin-top: 50px;
@@ -96,8 +97,17 @@
           }
         }
 
-        .img {
-          height: 205px;
+        .logos {
+          margin: 28px 0 0;
+          width: 280px;
+
+          @include desktop {
+            position: absolute;
+            left: 0;
+            top: 128px;
+            width: auto;
+          }
+
         }
 
       }

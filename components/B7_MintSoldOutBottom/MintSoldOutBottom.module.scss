@@ -41,7 +41,6 @@
 
     .btn {
       @include button;
-      width: 100%;
       margin-top: 30px;
       padding: 15px 22px;
       background: #FFFFFF;
@@ -58,7 +57,6 @@
       }
 
       @include desktop {
-        width: 560px;
         margin-top: 40px;
         padding: 17px 30px;
         font-size: 14px;

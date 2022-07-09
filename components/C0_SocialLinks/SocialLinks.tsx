@@ -4,10 +4,10 @@ import {FC} from "react";
 import clsx from "clsx";
 
 const socialLinks = [
-    { icon: svgIcons.spartan, href: "#" },
+    { icon: svgIcons.web, href: "http://spartan.com" },
     { icon: svgIcons.discord, href: "#" },
-    { icon: svgIcons.instagram, href: "#" },
-    { icon: svgIcons.twitter, href: "#" },
+    { icon: svgIcons.instagram, href: "https://www.instagram.com/spartanrace/?hl=en" },
+    { icon: svgIcons.twitter, href: "https://twitter.com/SpartanRace" },
 
 ];
 

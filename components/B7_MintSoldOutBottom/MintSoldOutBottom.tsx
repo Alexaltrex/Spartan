@@ -9,7 +9,7 @@ export const MintSoldOutBottom = () => {
                 <h2 className={style.title}>Mint sold out!</h2>
                 <p className={style.text}>{text}</p>
                 <button className={style.btn}>
-                    MINT
+                    buy on opensea
                 </button>
             </div>
         </div>
